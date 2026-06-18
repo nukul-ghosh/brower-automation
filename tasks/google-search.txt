@@ -1,0 +1,12 @@
+# Google Search — DSL task file
+# Run: node index.js --task tasks/google-search.txt
+#
+# Uses [name="q"] CSS selector for the search box since Google's
+# textarea is most reliably targeted by its name attribute.
+
+navigate https://google.com
+type [name="q"] "taiko browser automation"
+press Enter
+waitFor taiko
+screenshot
+done

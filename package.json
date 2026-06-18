@@ -1,0 +1,24 @@
+{
+  "name": "browser-automation",
+  "version": "1.0.0",
+  "description": "Browser automation using Taiko — no AI dependency, no API token",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "example:search": "node tasks/example-search.js",
+    "example:dsl": "node index.js --task tasks/example-login.txt",
+    "tm1:login": "node tasks/tm1/login.js",
+    "blu:submissions": "node tasks/blu/submissions-crud.js",
+    "blu:tasks": "node tasks/blu/tasks-crud.js",
+    "blu:search": "node tasks/blu/search.js",
+    "blu:navigation": "node index.js --task tasks/blu/navigation.txt",
+    "blu:all": "node tasks/tm1/login.js && node tasks/blu/submissions-crud.js && node tasks/blu/tasks-crud.js && node tasks/blu/search.js && node index.js --task tasks/blu/navigation.txt"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "taiko": "^1.4.8"
+  }
+}

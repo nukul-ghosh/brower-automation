@@ -1,0 +1,13 @@
+# Login flow example — DSL task file
+# Run: node index.js --task tasks/example-login.txt
+#
+# This demonstrates click, type, and waitFor.
+# Replace the URL and field labels to match your target app.
+
+navigate https://the-internet.herokuapp.com/login
+type Username tomsmith
+type Password "SuperSecretPassword!"
+click Login
+waitFor "You logged into a secure area"
+screenshot
+done

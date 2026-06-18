@@ -1,0 +1,29 @@
+# Navigation smoke test — Maps/BLU app
+# Verifies all major sections are reachable and render without error.
+# Run: node index.js --task tasks/blu/navigation.txt
+
+loginAs
+waitFor Submissions
+screenshot landing
+
+click Submissions
+waitFor Submissions
+screenshot submissions
+
+click Tasks
+waitFor Tasks
+screenshot tasks
+
+click Projects
+waitFor Projects
+screenshot projects
+
+click Contacts
+waitFor Contacts
+screenshot contacts
+
+click Assets
+waitFor Assets
+screenshot assets
+
+done
